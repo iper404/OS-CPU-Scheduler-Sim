@@ -1,0 +1,207 @@
+Script started on 2020-10-17 12:56:40-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="110" LINES="33"]
+]0;iper404@ubuntu: ~[01;32miper404@ubuntu[00m:[01;34m~[00m$ ipscheduler[K[K[K[K[K[K[K[K[K[K[K./ipscheduler
+
+ProcessID: A | Burst Time: 1 | Arrival Time: 0
+
+ProcessID: B | Burst Time: 4 | Arrival Time: 0
+
+ProcessID: C | Burst Time: 3 | Arrival Time: 2
+
+ProcessID: D | Burst Time: 1 | Arrival Time: 2
+
+ProcessID: E | Burst Time: 12 | Arrival Time: 3
+
+ProcessID: F | Burst Time: 1 | Arrival Time: 4
+
+ProcessID: G | Burst Time: 3 | Arrival Time: 5
+
+ProcessID: H | Burst Time: 2 | Arrival Time: 5
+
+***Welcome to the scheduler simulator***
+
+Input: 
+1: Non-Preemptive Shortest Job First
+2: Round Robin
+3: Shortest Remaining Time First
+
+1
+
+SJF Scheduling
+
+ProcessID: A | Schedule Time: 0 | Reason: Process terminated
+
+ProcessID: B | Schedule Time: 1 | Reason: Process terminated
+
+ProcessID: D | Schedule Time: 5 | Reason: Process terminated
+
+ProcessID: F | Schedule Time: 6 | Reason: Process terminated
+
+ProcessID: H | Schedule Time: 7 | Reason: Process terminated
+
+ProcessID: C | Schedule Time: 9 | Reason: Process terminated
+
+ProcessID: G | Schedule Time: 12 | Reason: Process terminated
+
+ProcessID: E | Schedule Time: 15 | Reason: Process terminated
+
+	||End Time: 27 | Complete||
+
+
+ProcessID: A | Turnaround Time: 1 | Waiting Time: 0
+
+ProcessID: B | Turnaround Time: 5 | Waiting Time: 1
+
+ProcessID: D | Turnaround Time: 4 | Waiting Time: 3
+
+ProcessID: F | Turnaround Time: 3 | Waiting Time: 2
+
+ProcessID: H | Turnaround Time: 4 | Waiting Time: 2
+
+ProcessID: C | Turnaround Time: 10 | Waiting Time: 7
+
+ProcessID: G | Turnaround Time: 10 | Waiting Time: 7
+
+ProcessID: E | Turnaround Time: 24 | Waiting Time: 12
+
+	||Average Turnaround Time: 7 | Average Wait Time:4||
+
+]0;iper404@ubuntu: ~[01;32miper404@ubuntu[00m:[01;34m~[00m$ ./ipscheduler
+
+ProcessID: A | Burst Time: 1 | Arrival Time: 0
+
+ProcessID: B | Burst Time: 4 | Arrival Time: 0
+
+ProcessID: C | Burst Time: 3 | Arrival Time: 2
+
+ProcessID: D | Burst Time: 1 | Arrival Time: 2
+
+ProcessID: E | Burst Time: 12 | Arrival Time: 3
+
+ProcessID: F | Burst Time: 1 | Arrival Time: 4
+
+ProcessID: G | Burst Time: 3 | Arrival Time: 5
+
+ProcessID: H | Burst Time: 2 | Arrival Time: 5
+
+***Welcome to the scheduler simulator***
+
+Input: 
+1: Non-Preemptive Shortest Job First
+2: Round Robin
+3: Shortest Remaining Time First
+
+2
+RR Scheduling: Q = 4
+
+ProcessID: A | Schedule Time: 0 | Reason: Process terminated
+
+ProcessID: B | Schedule Time: 1 | Reason: Process terminated
+
+ProcessID: C | Schedule Time: 5 | Reason: Process terminated
+
+ProcessID: D | Schedule Time: 8 | Reason: Process terminated
+
+ProcessID: E | Schedule Time: 9 | Reason: Quantum expired
+
+ProcessID: F | Schedule Time: 13 | Reason: Process terminated
+
+ProcessID: G | Schedule Time: 14 | Reason: Process terminated
+
+ProcessID: H | Schedule Time: 17 | Reason: Process terminated
+
+ProcessID: E | Schedule Time: 19 | Reason: Quantum expired
+
+	||End Time: 27 | Complete||
+
+
+ProcessID: A | Turnaround Time: 1 | Waiting Time: 0
+
+ProcessID: B | Turnaround Time: 5 | Waiting Time: 1
+
+ProcessID: C | Turnaround Time: 6 | Waiting Time: 3
+
+ProcessID: D | Turnaround Time: 7 | Waiting Time: 6
+
+ProcessID: F | Turnaround Time: 10 | Waiting Time: 9
+
+ProcessID: G | Turnaround Time: 12 | Waiting Time: 9
+
+ProcessID: H | Turnaround Time: 14 | Waiting Time: 12
+
+ProcessID: E | Turnaround Time: 24 | Waiting Time: 12
+
+	||Average Turnaround Time: 9 | Average Wait Time:6||
+
+]0;iper404@ubuntu: ~[01;32miper404@ubuntu[00m:[01;34m~[00m$ ./ipscheduler
+
+ProcessID: A | Burst Time: 1 | Arrival Time: 0
+
+ProcessID: B | Burst Time: 4 | Arrival Time: 0
+
+ProcessID: C | Burst Time: 3 | Arrival Time: 2
+
+ProcessID: D | Burst Time: 1 | Arrival Time: 2
+
+ProcessID: E | Burst Time: 12 | Arrival Time: 3
+
+ProcessID: F | Burst Time: 1 | Arrival Time: 4
+
+ProcessID: G | Burst Time: 3 | Arrival Time: 5
+
+ProcessID: H | Burst Time: 2 | Arrival Time: 5
+
+***Welcome to the scheduler simulator***
+
+Input: 
+1: Non-Preemptive Shortest Job First
+2: Round Robin
+3: Shortest Remaining Time First
+
+3
+SRTF Scheduling
+
+ProcessID: A | Schedule Time: 0 | Reason: Process terminated
+
+ProcessID: B | Schedule Time: 1 | Reason: Process preempted by process with shorter burst time
+
+ProcessID: D | Schedule Time: 2 | Reason: Process preempted by process with shorter burst time
+
+ProcessID: B | Schedule Time: 3 | Reason: Process terminated
+
+ProcessID: F | Schedule Time: 4 | Reason: Process preempted by process with shorter burst time
+
+ProcessID: B | Schedule Time: 5 | Reason: Process preempted by process with shorter burst time
+
+ProcessID: H | Schedule Time: 7 | Reason: Process terminated
+
+ProcessID: C | Schedule Time: 9 | Reason: Process preempted by process with shorter burst time
+
+ProcessID: G | Schedule Time: 12 | Reason: Process terminated
+
+ProcessID: E | Schedule Time: 15 | Reason: Process preempted by process with shorter burst time
+
+	||End Time: 27 | Complete||
+
+
+ProcessID: A | Turnaround Time: 1 | Waiting Time: 0
+
+ProcessID: D | Turnaround Time: 1 | Waiting Time: 0
+
+ProcessID: F | Turnaround Time: 1 | Waiting Time: 0
+
+ProcessID: B | Turnaround Time: 7 | Waiting Time: 3
+
+ProcessID: H | Turnaround Time: 4 | Waiting Time: 2
+
+ProcessID: C | Turnaround Time: 10 | Waiting Time: 7
+
+ProcessID: G | Turnaround Time: 10 | Waiting Time: 7
+
+ProcessID: E | Turnaround Time: 24 | Waiting Time: 12
+
+	||Average Turnaround Time: 7 | Average Wait Time:3||
+
+]0;iper404@ubuntu: ~[01;32miper404@ubuntu[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2020-10-17 12:56:56-07:00 [COMMAND_EXIT_CODE="0"]
